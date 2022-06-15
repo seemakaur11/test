@@ -11,7 +11,7 @@ function Errorpage() {
     setTimeout(() => {
       router.push('/');
     }, 3000);
-  }, []);
+  }, [router]);
 
   return (
     <div>
@@ -35,9 +35,7 @@ function Errorpage() {
             <ul className='navbar-nav'>
               <li className='nav-item m-2'>
                 <Link href='/'>
-                  <a className='nav-link active' href='/'>
-                    Home
-                  </a>
+                  <a className='nav-link active'>Home</a>
                 </Link>
               </li>
               <li className='nav-item m-2'>
